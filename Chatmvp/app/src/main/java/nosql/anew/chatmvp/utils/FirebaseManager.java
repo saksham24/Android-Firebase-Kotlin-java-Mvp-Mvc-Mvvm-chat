@@ -10,7 +10,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.HashMap;
 import java.util.Map;
 
-import nosql.anew.chatmvp.chat.presenter.FirebaseCallBacks;
+import nosql.anew.chatmvp.interfaces.FirebaseCallBacks;
 
 /**
  * Created by saksham on 26/6/17.

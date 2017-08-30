@@ -1,4 +1,4 @@
-package nosql.anew.chatmvp.login;
+package nosql.anew.chatmvp.views;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -13,9 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import nosql.anew.chatmvp.R;
-import nosql.anew.chatmvp.chat.ChatActivity;
-import nosql.anew.chatmvp.login.presenter.LoginPresenter;
-import nosql.anew.chatmvp.login.view.ILoginView;
+import nosql.anew.chatmvp.presenters.LoginPresenter;
 import nosql.anew.chatmvp.utils.MyUtils;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener,ILoginView {
@@ -88,6 +86,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         mChatRoomDialog.setContentView(view);
         mChatRoomDialog.show();
 
+    }
+
+    @Override
+    public void changeButtonText() {
+        mAuth.setText(getString(R.string.text_waiting_for_auth));
     }
 
     @Override

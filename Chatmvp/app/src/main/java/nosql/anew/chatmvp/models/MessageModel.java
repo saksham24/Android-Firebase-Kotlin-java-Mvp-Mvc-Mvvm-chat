@@ -1,10 +1,10 @@
-package nosql.anew.chatmvp.chat.model;
+package nosql.anew.chatmvp.models;
 
 import com.google.firebase.database.DataSnapshot;
 
 import java.util.ArrayList;
 
-import nosql.anew.chatmvp.chat.presenter.ModelCallBacks;
+import nosql.anew.chatmvp.interfaces.ModelCallBacks;
 
 /**
  * Created by saksham on 26/6/17.

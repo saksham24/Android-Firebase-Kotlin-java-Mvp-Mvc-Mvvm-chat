@@ -1,4 +1,4 @@
-package nosql.anew.chatmvp.chat.model;
+package nosql.anew.chatmvp.models;
 
 import com.google.firebase.database.DataSnapshot;
 

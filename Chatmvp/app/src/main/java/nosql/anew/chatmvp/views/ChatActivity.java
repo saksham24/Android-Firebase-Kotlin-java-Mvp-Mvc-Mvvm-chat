@@ -1,4 +1,4 @@
-package nosql.anew.chatmvp.chat;
+package nosql.anew.chatmvp.views;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,15 +6,13 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
 import nosql.anew.chatmvp.utils.MyUtils;
 import nosql.anew.chatmvp.R;
-import nosql.anew.chatmvp.chat.model.ChatPojo;
-import nosql.anew.chatmvp.chat.presenter.ChatPresenter;
-import nosql.anew.chatmvp.chat.view.IChatView;
+import nosql.anew.chatmvp.models.ChatPojo;
+import nosql.anew.chatmvp.presenters.ChatPresenter;
 
 public class ChatActivity extends AppCompatActivity implements View.OnClickListener,IChatView {
 

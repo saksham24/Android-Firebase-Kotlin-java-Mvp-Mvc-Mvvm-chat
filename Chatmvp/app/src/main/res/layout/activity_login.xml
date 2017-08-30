@@ -4,7 +4,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="nosql.anew.chatmvp.login.LoginActivity">
+    tools:context="nosql.anew.chatmvp.views.LoginActivity">
 
     <Button
         android:id="@+id/button_auth"

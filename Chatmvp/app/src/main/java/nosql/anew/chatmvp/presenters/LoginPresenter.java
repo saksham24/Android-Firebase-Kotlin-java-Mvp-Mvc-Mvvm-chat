@@ -1,11 +1,11 @@
-package nosql.anew.chatmvp.login.presenter;
+package nosql.anew.chatmvp.presenters;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-import nosql.anew.chatmvp.login.view.ILoginView;
+import nosql.anew.chatmvp.views.ILoginView;
 
 
 /**
@@ -21,6 +21,7 @@ public class LoginPresenter {
     }
 
     public void firebaseAnonymousAuth() {
+        mILoginView.changeButtonText();
         FirebaseAuth.getInstance().signInAnonymously()
                 .addOnCompleteListener( new OnCompleteListener<AuthResult>() {
                     @Override

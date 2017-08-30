@@ -11,4 +11,5 @@
     <string name="hint_room_name">Room name</string>
     <string name="hint_typing">Type here</string>
     <string name="send_text">Send</string>
+    <string name="text_waiting_for_auth">Authenticating, this may take 1 minute</string>
 </resources>

@@ -1,8 +1,8 @@
-package nosql.anew.chatmvp.chat.presenter;
+package nosql.anew.chatmvp.interfaces;
 
 import java.util.ArrayList;
 
-import nosql.anew.chatmvp.chat.model.ChatPojo;
+import nosql.anew.chatmvp.models.ChatPojo;
 
 /**
  * Created by saksham on 26/6/17.

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="nosql.anew.chatmvp.chat.ChatActivity">
+    tools:context="nosql.anew.chatmvp.views.ChatActivity">
 
     <TextView
         android:id="@+id/text_header"
