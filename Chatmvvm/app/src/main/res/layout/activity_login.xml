@@ -1,0 +1,61 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+    <variable name="vModel" type="nosql.anew.chatmvvm.viewModels.LoginViewModel"/>
+    <variable name="activity" type="nosql.anew.chatmvvm.views.LoginActivity"/>
+        <import type="android.view.View"/>
+    </data>
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="@dimen/long_width"
+        android:layout_height="@dimen/small_height"
+        android:layout_marginTop="@dimen/margin_extra_large"
+        android:layout_centerHorizontal="true"
+        android:text="@{vModel.authInProgress ? @string/text_waiting_for_auth :  @string/authentication_label}"
+        android:onClick="@{() -> vModel.firebaseAnonymousAuth()}"
+        android:padding="@dimen/padding_average"
+        android:visibility="@{vModel.isAuthDone ? View.GONE : View.VISIBLE}"
+        style="@style/regular_buttons"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/small_height"
+        android:text="@string/success_message_authentication"
+        android:layout_marginTop="@dimen/margin_extra_large"
+        android:visibility="@{vModel.isAuthDone ? View.VISIBLE : View.GONE}"
+        android:layout_centerHorizontal="true"
+        style="@style/info_textviews"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/long_height"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="@dimen/small_width"
+            android:layout_height="@dimen/small_height"
+            android:layout_margin="@dimen/margin_extra_large"
+            android:text="@string/create_room_label"
+            android:padding="@dimen/padding_small"
+            android:onClick="@{() -> activity.showRoomDialog()}"
+            android:visibility="@{vModel.isAuthDone ? View.VISIBLE : View.GONE}"
+            style="@style/regular_buttons"/>
+
+        <Button
+            android:layout_width="@dimen/small_width"
+            android:layout_height="@dimen/small_height"
+            android:layout_margin="@dimen/margin_extra_large"
+            android:text="@string/existing_room_label"
+            android:padding="@dimen/padding_small"
+            android:onClick="@{() -> activity.showRoomDialog()}"
+            android:visibility="@{vModel.isAuthDone ? View.VISIBLE : View.GONE}"
+            style="@style/regular_buttons"/>
+    </LinearLayout>
+
+</RelativeLayout>
+</layout>

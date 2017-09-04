@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable name="chatMessage" type="nosql.anew.chatmvvm.models.ChatPojo"/>
+        <import type="android.view.View"/>
+    </data>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:visibility="@{chatMessage.isMine ? View.GONE : View.VISIBLE}"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/small_image"
+            android:layout_height="@dimen/small_image"
+            android:layout_marginTop="@dimen/margin_average"
+            android:src="@drawable/grey_node" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/left_node_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{chatMessage.message}"
+                style="@style/textview_message_left"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_average"
+            android:layout_marginTop="@dimen/margin_average"
+            android:text="@{chatMessage.timeStamp}"
+            style="@style/info_textviews"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:visibility="@{chatMessage.isMine ? View.VISIBLE: View.GONE}"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_average"
+            android:text="@{chatMessage.timeStamp}"
+            style="@style/info_textviews"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_average"
+            android:orientation="vertical"
+            android:background="@drawable/right_node_bg"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{chatMessage.message}"
+                style="@style/textview_message_right"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/small_image"
+            android:layout_height="@dimen/small_image"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/margin_small"
+            android:src="@drawable/purple_node_bg" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

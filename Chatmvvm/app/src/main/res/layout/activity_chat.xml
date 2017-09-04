@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable name="vModel" type="nosql.anew.chatmvvm.viewModels.ChatViewModel"/>
+        <variable name="activity" type="nosql.anew.chatmvvm.views.ChatActivity"/>
+        <import type="android.view.View"/>
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_small"
+        android:text="@string/chats_heading"
+        style="@style/activity_headers"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_input">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/layout_input"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_height"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        style="@style/regular_layouts">
+
+            <EditText
+                android:id="@+id/edittext_chat_message"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/hint_typing"
+                android:layout_marginRight="@dimen/margin_average"
+                style="@style/regular_editTexts"/>
+        <Button
+            android:layout_width="@dimen/small_width"
+            android:layout_height="match_parent"
+            android:text="@string/send_text"
+            android:onClick="@{() -> activity.sendMessage()}"
+            style="@style/regular_buttons"/>
+    </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
+
+</layout>
