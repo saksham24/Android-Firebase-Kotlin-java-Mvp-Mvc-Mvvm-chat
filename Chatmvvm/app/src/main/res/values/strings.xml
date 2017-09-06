@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Chatmvp</string>
+    <string name="app_name">Chatmvvm</string>
     <string name="authentication_label">Authentication with Firebase</string>
     <string name="create_room_label">Create room</string>
     <string name="existing_room_label">Enter existing</string>
