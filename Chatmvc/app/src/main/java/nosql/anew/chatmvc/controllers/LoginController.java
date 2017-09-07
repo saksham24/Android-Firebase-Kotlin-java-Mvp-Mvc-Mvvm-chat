@@ -101,12 +101,14 @@ public class LoginController extends AppCompatActivity implements View.OnClickLi
     }
 
     public void firebaseAnonymousAuth() {
+        mAuth.setText(getString(R.string.text_waiting_for_auth));
         FirebaseAuth.getInstance().signInAnonymously()
                 .addOnCompleteListener( new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (!task.isSuccessful()) {
                            showToast("Firebase authentication failed, please check your internet connection");
+                            mAuth.setText(getString(R.string.authentication_label));
                         } else {
                             authSuccessful();
                         }
