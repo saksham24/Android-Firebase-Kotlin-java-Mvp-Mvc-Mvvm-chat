@@ -28,9 +28,7 @@ public class ChatActivity extends AppCompatActivity implements Observer<ArrayLis
         mViewModel= new ChatViewModel(getIntent().getStringExtra(MyUtils.EXTRA_ROOM_NAME));
         mBinding.setVModel(mViewModel);
         mBinding.setActivity(this);
-
         mBinding.recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
         mViewModel.addObserver(this);
         mViewModel.setListener();
     }
