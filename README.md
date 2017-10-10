@@ -24,7 +24,7 @@ Simple chat Application with one to one connectivity using Firebase Real time Da
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <div class="text-center"><img src="https://raw.githubusercontent.com/saksham24/Android-Firebase-Mvp-Mvc-Mvvm-chat/master/Chatmvc/app/src/main/res/drawable/app_icon.png" width="50%"></div>
+      <div class="text-center"><img src="https://raw.githubusercontent.com/saksham24/Android-Firebase-Mvp-Mvc-Mvvm-chat/master/Chatmvc/app/src/main/res/drawable/app_icon.png" width="10%"></div>
       <div class="col-sm-12 margin">MODEL VIEW CONTROLLER contains acitivity as controller, xml or java classes extending View  as view and database classes as model.</div>
     </div>
     <div class="col-sm-4">
