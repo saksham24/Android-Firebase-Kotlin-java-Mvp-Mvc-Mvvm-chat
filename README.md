@@ -21,7 +21,7 @@
 </div>
   
 <div class="container">
-  <div class="row" float="left">
+  <div >
     <div class="col-sm-4" width="30%">
       <div class="text-center" ><img src="https://raw.githubusercontent.com/saksham24/Android-Firebase-Mvp-Mvc-Mvvm-chat/master/Chatmvc/app/src/main/res/drawable/app_icon.png" width="30%"></div>
       <div class="col-sm-12 margin" width="30%">MODEL VIEW CONTROLLER contains acitivity as controller, xml or java classes extending View  as view and database classes as model.</div>
