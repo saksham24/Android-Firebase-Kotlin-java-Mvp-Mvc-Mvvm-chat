@@ -15,7 +15,7 @@
   </style>
 </head>
 <body>
-
+ 
 <div class="jumbotron text-center">
   <h1>Here comes GIF</h1>
 </div>
