@@ -7,13 +7,11 @@ Simple chat Application with one to one connectivity using Firebase Real time Da
   <title>Readme</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <style type="text/css">
-  	.line-height{
-     line-height: 25px;
-  	}
+  	.line-height{  line-height: 25px; }
   	.margin{margin-top: 25px;}
   </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
 
@@ -24,15 +22,15 @@ Simple chat Application with one to one connectivity using Firebase Real time Da
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <div class="text-center"><img src="https://raw.githubusercontent.com/saksham24/Android-Firebase-Mvp-Mvc-Mvvm-chat/master/Chatmvc/app/src/main/res/drawable/app_icon.png" width="10%"></div>
+      <div class="text-center"><img src="https://raw.githubusercontent.com/saksham24/Android-Firebase-Mvp-Mvc-Mvvm-chat/master/Chatmvc/app/src/main/res/drawable/app_icon.png" ></div>
       <div class="col-sm-12 margin">MODEL VIEW CONTROLLER contains acitivity as controller, xml or java classes extending View  as view and database classes as model.</div>
     </div>
     <div class="col-sm-4">
-      <div class="text-center"><img src="https://raw.githubusercontent.com/saksham24/Android-Firebase-Mvp-Mvc-Mvvm-chat/master/Chatmvp/app/src/main/res/drawable/app_icon.png" width="50%"></div>
+      <div class="text-center"><img src="https://raw.githubusercontent.com/saksham24/Android-Firebase-Mvp-Mvc-Mvvm-chat/master/Chatmvp/app/src/main/res/drawable/app_icon.png"></div>
       <div class="col-sm-12 margin">MODEL VIEW PRESENTER contains activity,fragments,xmls,java classes extending views as View, presenter class  containing all bussiness logics, and databse classses as models</div>
     </div>
     <div class="col-sm-4">
-     <div class="text-center"><img src="https://raw.githubusercontent.com/saksham24/Android-Firebase-Mvp-Mvc-Mvvm-chat/master/Chatmvvm/app/src/main/res/drawable/app_icon.png" width="50%"></div>
+     <div class="text-center"><img src="https://raw.githubusercontent.com/saksham24/Android-Firebase-Mvp-Mvc-Mvvm-chat/master/Chatmvvm/app/src/main/res/drawable/app_icon.png" ></div>
       <div class="col-sm-12 margin">View and Model are same as in MVP AND MVC view updations are done using data binding by making view Models. View model is is bind to view and handles all Ui updates
       </div>
     </div> 
