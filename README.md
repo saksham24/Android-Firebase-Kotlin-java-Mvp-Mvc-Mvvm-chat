@@ -7,7 +7,7 @@
 
 <br><br><br>
 
-## Mvc (Model View Controller)   :part_alternation_mark: :heavy_check_mark: :parking:
+## Mvc (Model View Controller)   :part_alternation_mark: :heavy_check_mark: C
 Mvc is clean approach in android putting views away from controller. controller is only reponsible for updating models, once model get updated it can notify views and then view can be updated using proper callbacks.<br>
 Traditional MVC is where there is a
 
@@ -16,7 +16,7 @@ Traditional MVC is where there is a
 **Controller** : Controls the interaction between Model and View, where view calls the controller to update model. View can call multiple controllers if needed.
 <br> <br>
 
-## Mvp (Model View Presenter)  :part_alternation_mark: :heavy_check_mark: C
+## Mvp (Model View Presenter)  :part_alternation_mark: :heavy_check_mark: :parking:
 Some disadvantages of Mvc can be overcomed using Mvp approach. Presenter in Mvp contains all bussiness logics and this class is far away from android Context or android related dependencies which provides flexibility to text bussiness logic by simply using presenter class in test modules.Android related dependencies create complexity in testing. Presenter do not have and android dependency like Context,View etc and all the model updation and network request are done via presenter. Once the model get updated or a network request completes view are updated via presenter using callbacks to view from presenter. No model and network request can directly approach views.
 <br> <br>
 
