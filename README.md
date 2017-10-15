@@ -3,7 +3,7 @@
 
 <br><br><br><br>
 
-<p align="center"><img src="https://github.com/saksham24/Android-Firebase-Mvp-Mvc-Mvvm-chat/blob/master/Chatmvc/chat.jpeg" width="45%"><br>
+<p align="center"><img src="https://github.com/saksham24/Android-Firebase-Mvp-Mvc-Mvvm-chat/blob/master/Chatmvc/chat.jpg" width="50%"><br>
 
 <br><br><br><br>
 
@@ -27,7 +27,7 @@ Mvvm involves data bindind approach to make code short and reduce view handling 
 
 <img src="https://github.com/saksham24/Android-Firebase-Mvp-Mvc-Mvvm-chat/blob/master/Chatmvc/layer-1.png" width="150%"><br><br>
 <br><br>
-<img src="https://github.com/saksham24/Android-Firebase-Mvp-Mvc-Mvvm-chat/blob/master/Chatmvc/layer-2.png" width="150%"><br><br>
+<img src="https://github.com/saksham24/Android-Firebase-Mvp-Mvc-Mvvm-chat/blob/master/Chatmvc/compare.png" width="150%"><br><br>
 ## Choice of correct architect
 :eyes:
 <br>
