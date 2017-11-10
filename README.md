@@ -17,7 +17,7 @@ Traditional MVC is where there is a
 <br> <br>
 
 ## Mvp (Model View Presenter)  :part_alternation_mark: :heavy_check_mark: :parking:
-Some disadvantages of Mvc can be overcomed using Mvp approach. Presenter in Mvp contains all bussiness logics and this class is far away from android Context or android related dependencies which provides flexibility to text bussiness logic by simply using presenter class in test modules.Android related dependencies create complexity in testing. Presenter do not have and android dependency like Context,View etc and all the model updation and network request are done via presenter. Once the model get updated or a network request completes view are updated via presenter using callbacks to view from presenter. No model and network request can directly approach views.
+Some disadvantages of Mvc can be overcomed using Mvp approach. Presenter in Mvp contains all bussiness logics and this class is far away from android Context or android related dependencies which provides flexibility to text bussiness logic by simply using presenter class in test modules.Android related dependencies create complexity in testing. Presenter do not have any android dependency like Context,View etc and all the model updation and network request are done via presenter. Once the model get updated or a network request completes, view are updated via presenter using callbacks to view from presenter. No model and network request can directly approach views.
 <br> <br>
 
 ## Mvvm (Model View View-Model)  :part_alternation_mark: :heavy_check_mark: :heavy_check_mark: :part_alternation_mark:
