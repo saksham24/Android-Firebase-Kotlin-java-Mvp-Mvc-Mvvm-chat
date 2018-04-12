@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="nosql.anew.chatkotlinmvc.controllers.LoginController">
+    tools:context="nosql.anew.kotlinmvc.controllers.LoginController">
 
     <Button
         android:id="@+id/button_auth"

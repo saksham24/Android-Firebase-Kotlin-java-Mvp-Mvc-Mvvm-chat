@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="nosql.anew.chatkotlinmvc">
+    package="nosql.anew.kotlinmvc">
 
     <application
         android:allowBackup="true"
@@ -10,14 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".controllers.LoginController">
+        <activity android:name="nosql.anew.kotlinmvc.controllers.LoginController">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".controllers.ChatController"
+        <activity android:name="nosql.anew.kotlinmvc.controllers.ChatController"
             android:theme="@style/chatTheme"/>
 
     </application>

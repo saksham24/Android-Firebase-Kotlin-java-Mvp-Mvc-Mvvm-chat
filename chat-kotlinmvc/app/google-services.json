@@ -8,37 +8,6 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:871534880715:android:f72e3894bf3a78bc",
-        "android_client_info": {
-          "package_name": "nosql.anew.chatkotlinmvc"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "871534880715-sqdlhp68pu40krtk48jblo287jlru164.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyD9kQR8AHvKeJNIlFuBlxPqfNZFkicQ97o"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:871534880715:android:61c19488e5777734",
         "android_client_info": {
           "package_name": "nosql.anew.chatmvc"
@@ -104,6 +73,37 @@
         "mobilesdk_app_id": "1:871534880715:android:1a29bfe69928f799",
         "android_client_info": {
           "package_name": "nosql.anew.chatmvvm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871534880715-sqdlhp68pu40krtk48jblo287jlru164.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9kQR8AHvKeJNIlFuBlxPqfNZFkicQ97o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871534880715:android:6b8799272fea9e62",
+        "android_client_info": {
+          "package_name": "nosql.anew.kotlinmvc"
         }
       },
       "oauth_client": [
