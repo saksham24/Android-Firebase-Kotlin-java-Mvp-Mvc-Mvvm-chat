@@ -55,6 +55,6 @@ class ChatActivity : AppCompatActivity(), View.OnClickListener, IChatView {
 
     protected override fun onDestroy() {
         super.onDestroy()
-        mChatPresenter!!.onDestory(mRoomName)
+        mChatPresenter!!.onDestroy(mRoomName)
     }
 }

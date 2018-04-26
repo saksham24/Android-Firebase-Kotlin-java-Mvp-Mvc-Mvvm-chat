@@ -30,7 +30,7 @@ class ChatPresenter(private var mIChatView: IChatView?) : FirebaseCallBacks, Mod
         FirebaseManager.getInstance(roomName!!, this)!!.addMessageListeners()
     }
 
-    fun onDestory(roomName: String?) {
+    fun onDestroy(roomName: String?) {
         FirebaseManager.getInstance(roomName!!, this)!!.removeListeners()
         FirebaseManager.getInstance(roomName, this)!!.destroy()
         mIChatView = null
