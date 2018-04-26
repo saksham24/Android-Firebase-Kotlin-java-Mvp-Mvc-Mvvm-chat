@@ -1,4 +1,4 @@
-package nosql.anew.kotlinmvc.utils
+package nosql.anew.kotlinmvp.utils
 
 import java.text.SimpleDateFormat
 import java.util.*

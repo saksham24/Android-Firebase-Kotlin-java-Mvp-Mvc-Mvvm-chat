@@ -66,7 +66,7 @@ class ChatController : AppCompatActivity(), View.OnClickListener, FirebaseCallBa
     }
 
     private fun sendMessageToFirebase(roomName: String, message: String) {
-        if (message.trim { it <= ' ' } != "") {
+        if (!message.trim().equals("")) {
             FirebaseManager.getInstance(roomName, this)!!.sendMessageToFirebase(message)
         }
         mEdittextChat!!.setText("")

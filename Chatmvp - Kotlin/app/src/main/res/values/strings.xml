@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">kotlin Mvp</string>
+    <string name="authentication_label">Authentication with Firebase</string>
+    <string name="create_room_label">Create room</string>
+    <string name="existing_room_label">Enter existing</string>
+    <string name="room_dialog_heading">Enter room name</string>
+    <string name="dialog_room_info">Name of the room is your token by which you can connect with the person who entered the same room name as your</string>
+    <string name="text_submit">Submit</string>
+    <string name="success_message_authentication">Authentication is successful</string>
+    <string name="chats_heading">Messages</string>
+    <string name="hint_room_name">Room name</string>
+    <string name="hint_typing">Type here</string>
+    <string name="send_text">Send</string>
+    <string name="text_waiting_for_auth">Authenticating, this may take 1 minute</string>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nosql.anew.kotlinmvp.views.LoginActivity">
+
+    <Button
+        android:id="@+id/button_auth"
+        android:layout_width="@dimen/long_width"
+        android:layout_height="@dimen/small_height"
+        android:layout_marginTop="@dimen/margin_extra_large"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/padding_average"
+        android:text="@string/authentication_label"
+        style="@style/regular_buttons"/>
+
+    <TextView
+        android:id="@+id/text_info"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/small_height"
+        android:text="@string/success_message_authentication"
+        android:layout_marginTop="@dimen/margin_extra_large"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        style="@style/info_textviews"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/long_height"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/button_create_room"
+            android:layout_width="@dimen/small_width"
+            android:layout_height="@dimen/small_height"
+            android:layout_margin="@dimen/margin_extra_large"
+            android:text="@string/create_room_label"
+            android:padding="@dimen/padding_small"
+            android:visibility="gone"
+            style="@style/regular_buttons"/>
+
+        <Button
+            android:id="@+id/button_existing_room"
+            android:layout_width="@dimen/small_width"
+            android:layout_height="@dimen/small_height"
+            android:layout_margin="@dimen/margin_extra_large"
+            android:text="@string/existing_room_label"
+            android:padding="@dimen/padding_small"
+            android:visibility="gone"
+            style="@style/regular_buttons"/>
+    </LinearLayout>
+
+</RelativeLayout>

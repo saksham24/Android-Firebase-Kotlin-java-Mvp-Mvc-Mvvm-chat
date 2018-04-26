@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="nosql.anew.kotlinmvp.views.ChatActivity">
+
+    <TextView
+        android:id="@+id/text_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_small"
+        android:text="@string/chats_heading"
+        style="@style/activity_headers"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_input">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/layout_input"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_height"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        style="@style/regular_layouts">
+
+            <EditText
+                android:id="@+id/edittext_chat_message"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/hint_typing"
+                android:layout_marginRight="@dimen/margin_average"
+                style="@style/regular_editTexts"/>
+        <Button
+            android:id="@+id/button_send_message"
+            android:layout_width="@dimen/small_width"
+            android:layout_height="match_parent"
+            android:text="@string/send_text"
+            style="@style/regular_buttons"/>
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
