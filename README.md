@@ -8,12 +8,12 @@
 <br><br><br>
 
 ## Mvc (Model View Controller)   :part_alternation_mark: :heavy_check_mark: C
-Mvc is clean approach in android putting views away from controller. controller is only reponsible for updating models, once model get updated it can notify views and then view can be updated using proper callbacks.<br>
+Mvc is a clean approach in android putting views away from the controller. the controller is only responsible for updating models, once the model gets updated it can notify views and then the view can be updated using proper callbacks.
 Traditional MVC is where there is a
 
 **Model** : Acts as the model for data<br>
 **View** : Deals with the view to the user which can be the UI<br>
-**Controller** : Controls the interaction between Model and View, where view calls the controller to update model. View can call multiple controllers if needed.
+**Controller** :Controls the interaction between Model and View, where view calls the controller to update the model. A view can call multiple controllers if needed..
 <br> <br>
 
 ## Mvp (Model View Presenter)  :part_alternation_mark: :heavy_check_mark: :parking:
