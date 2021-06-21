@@ -33,5 +33,8 @@ MVVM involves a data binding approach to make code short and reduce view handlin
 <br>
 Choice of a correct architect for a project involves the understanding of the modules which will be developed. Some functionalities work great on MVC, some with Mvp and some with Mvvm. It is quite difficult to debug project made using MVVM format so a small project is recommended for MVVM selection. MVP is still the best approach in writing android projects but MVP end up with 20% extra code with the same functionality written in MVC. Mvp is good if you are really interested in test cases and unit testing of modules. Mvc is a widely used technique in android. Google itself write it's repositories in MVC :thumbsup:.
 
+
+Except these three android architectures, there is one more architecture named as **"MVI** - Model view Intent". This is not very popular among Android developers. Please check this link if you are interested in **MVI**.
+<br>https://github.com/saksham24/Android-simple-MVI-pattern-with-MVP-MVVM-collaboration
 <br><br><br> 
 # END     :warning:
