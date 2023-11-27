@@ -31,14 +31,14 @@ MVVM involves a data binding approach to make code short and reduce view handlin
 ## Choice of correct architect
 :eyes:
 <br>
-**Choice of a correct architecture** for the project involves the understanding of the modules which needs to be developed. Some functionalities works great on MVC, some with Mvp and some with Mvvm. It is quite difficult to debug projects made on MVVM which doesn't have one sided data flow due to data binding and live data. If an application receives continuous data from a source, needs a regular UI update and has majorly(80–90%) one sided communication(eg: sending logs from electronic devices to android app) like solar-cell, inverters, or any device's status monitoring can work well with MVVM due to **live data** - UI update. Debugging these MVVM applications can be easy as **major flow of data is one sided**.
+**Choice of a correct architecture** for the project involves the understanding of the modules which needs to be developed. Some functionalities works great on MVC, some with Mvp and some with Mvvm. It is quite difficult to debug the projects made on MVVM specially those which doesn't have one sided data flow due to data binding and live data. If an application receives a continuous data stream from a source, needs a regular UI-update and has majorly(80–90%) one sided communication(eg: an electronic devices sending logs to a android app) like solar-cell apps, inverters apps, or any other device's status monitoring can work well with MVVM due to **live data** - UI update. Debugging these MVVM applications can be easy as **major flow of data is one sided**.
 
 MVP is a good approach for writing android projects when we are concerned about testing the business logic w.r.t unit testing via JAVA test frameworks(Not Android). Since **JAVA test framework** will only resolve java dependencies and a clean presenter layer is free from android related dependencies like context, sharedpreferences, or any other **com.android.*** package. Drawback of MVP is that it ends up writing **20-25% extra code** with the same functionality written in MVC or MVVM. Mvp is good if you are really interested in test cases and unit testing of modules.
 For MVP using java test kits just make instance of presenter and run test functions.
 <br> <br>
 eg: **new Presenter().testSomeFunction()**.
 
-Mvc is widely used technique in android. Google itself wrote it's repositories in MVC for many years. Now a days google is following MVVM for it's github repositories as these repo's are small and majorly samples. MVC application can be tested via android test frameworks not with JAVA specific test tools due to lack of dependencies of **com.android.*** **packages** in java specific tool.
+Mvc is widely used technique in android. Google itself wrote it's repositories in MVC for many years. Now a days google is adopting MVVM for it's github repositories as these repo's are small and majorly samples. MVC application can be tested via android test frameworks not with JAVA specific test tools due to lack of dependencies of **com.android.*** **packages** in java specific tool.
 
 **Example**:
 1. A chat application can be writtten in MVC, MVP, MVVM depending on testing requirements and flow of data.
